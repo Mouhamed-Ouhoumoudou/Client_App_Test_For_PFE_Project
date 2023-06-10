@@ -1,0 +1,114 @@
+﻿   fieldset.scheduler-border {
+            border: 1px dashed #3C8DBC !important;
+            padding: 0 1.3em !important;
+            margin: 55px !important;
+        }
+
+        legend.scheduler-border {
+            text-align: left !important;
+            width: auto;
+            padding: 2px 10px;
+            border-bottom: none;
+            font-size: 15px;
+            color: #3C8DBC;
+        }
+
+        body {
+            font-family: "Open Sans","Helvetica Neue",Helvetica,Arial !important;
+            background-color: white !important;
+        }
+
+        #legend {
+            margin-bottom: 2px;
+        }
+
+        .centmodel {
+            top: 40% !important;
+            transform: translateY(-50%) !important;
+        }
+
+        .widthmodel {
+            width: 30%
+        }
+
+        .btn-group-sm > .btn, .btn-sm {
+            border-width: 0px;
+            border-radius: 3px !important;
+        }
+
+        .modal-footer {
+            background-color: #fff !important;
+            border-top: 0px solid #e5e5e5 !important
+        }
+
+        #addarticle {
+            top: 17px;
+            right: 59px;
+            border: 0px;
+        }
+
+        .field-validation-error {
+            color: red;
+            font-weight: bold;
+        }
+
+        .form-control.input-validation-error {
+            border: 1px solid red;
+        }
+
+        .dataTables_filter {
+            text-align: center;
+        }
+
+        .dataTables_length select {
+            border-radius: 4px !important;
+            cursor: pointer;
+        }
+
+        .dataTables_filter input[type='search'] {
+            width: 168px !important;
+            border-radius: 4px !important;
+        }
+
+        .dataTables_paginate {
+            text-align: center !important;
+        }
+
+        .dataTables_wrapper .row:last-child {
+            border: 1px solid #d6e1ea;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            background-color: #ffffff;
+            border: 0
+        }
+
+        .dataTables_wrapper .row:first-child {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            background-color: #ffffff;
+            border-bottom: 0;
+        }
+
+        .dataTable > thead > tr > th[class*=sorting_disabled] {
+            color: #707070;
+            cursor: text;
+        }
+
+        .dataTable > thead > tr > th[class*=sort]:hover {
+            color: #547EA8
+        }
+
+        .table > tbody > tr > td {
+            line-height: 1.12857143 !important;
+            vertical-align: middle !important;
+        }
+        .required-field {
+            color: red !important;
+        }
+        .error{
+             color: #a94442;
+             border-color: #a94442 !important;
+        }
+        body{
+             width:99%;
+        }

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>App</title>
+        <link href="wwwroot/CSS/bootstrap.min.css" rel="stylesheet" />
+        <link href="wwwroot/CSS/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="wwwroot/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+        <link href="wwwroot/CSS/alertify.core.css" rel="stylesheet" />
+        <link href="wwwroot/CSS/alertify.default.css" rel="stylesheet" />
+        <!-- <link href="wwwroot/CSS/site.css" rel="stylesheet" /> -->
+        <style>
+            a{
+                color: white;
+                margin-left: 80px;
+                font-size: 18px;
+            }
+            #idIframe{
+                width: 600px;height: 800px;
+                display: none;
+                margin-left: 400px;
+            }
+            #form-file{
+                width: 550px;
+                background: #fff;
+                box-shadow: 0px 0px 14px 5px rgb(0 0 0 / 20%);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <iframe src="E:\\Telechergement\TP Big Data V8 [MedYassineLandolsi].pdf"></iframe> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" href="#">App</a>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-tager="#navbaSuportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="collapse navbar-collapse" id="navbaSuportedContent">
+                
+                        <a class=" nav-item nav-link active " href="#">Accuiel</a>
+                        <a class="nav-link">
+                            service
+                        </a>
+                        <a class="nav-link" href="#">
+                            à propos
+                        </a>
+                        <a class="nav-link" href="#">
+                            nous contactez
+                        </a>
+            </div>
+            
+        </nav>
+        <!-- <button id="fermer" onclick="fermer()">fermer</button> -->
+        <iframe id="idIframe"  src="">iframe</iframe>
+        <div id="container" style="margin-top:100px;margin-left: 100px;">
+            
+            
+            
+            <!-- <a style="color:darkblue;" href="\\172.16.234.107\FTP\CV.pdf">download</a> -->
+           
+
+           <!-- <a style="color:darkblue;" href="ftp://mouhamedftp:1234@172.16.234.104/CV.pdf">CV.pdf</a>-->
+            <!-- <button onclick="ConvertUrlToBlob('ftp://172.16.234.107/CV.pdf')">CV.pdf</button>  -->
+            
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-success" style="margin-left: 900px;" data-toggle="modal" data-target="#exampleModal">
+    Ajouter
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">uploader un fichier</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            
+                
+            <form id="form-file">
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label>
+                            Fichier
+                            <span class="required-field">*</span>
+                        </label>
+                        <input type="file" id="fileID" value="image" required class="form-control" required>
+                        <input type="number" id="idFichier" value="" style="display: none;">
+                    </div>
+                    <br>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <button  class="btn btn-success " id="submitFile" type="button" ><span><i class="fa fa-send"></i>envoyer</span></button>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                    
+        <h2>Liste des documents</h2>
+            <table class="table table-striped" style="width: 1000px;">
+                <thead>
+                    <tr> 
+                        
+                        <th>documents</th>
+                        <th>Taille</th>
+                        <th>Format</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="FichierListe">
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <script type="text/javascript" src="wwwroot/JS/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="wwwroot/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="wwwroot/JS/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="wwwroot/JS/jquery.validate.unobtrusive.min.js"></script>
+        <script type="text/javascript" src="wwwroot/JS/alertify.min.js"></script>
+        <script type="text/javascript" src="wwwroot/JS/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="wwwroot/JS/jquery.dataTables.bootstrap.min.js"></script>
+        <script type="text/javascript" src="wwwroot/JS/dataTables.buttons.min.js"></script>
+        <script type="text/javascript" src="wwwroot/JS/dataTables.select.min.js"></script>
+        <script type="text/javascript" src="wwwroot/JS/moment.min.js"></script>
+        <script type="text/javascript" src="wwwroot/JS/crud.Fichier.js"></script>
+
+    </body>
+</html>
